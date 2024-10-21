@@ -1,0 +1,84 @@
+.sidebar {
+    min-height: 100vh;
+    display: flex; /* Changed to flex for better layout control */
+    flex-direction: column; /* Ensure column direction */
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar menu {
+    display: flex; /* Ensure horizontal alignment of icons */
+    align-items: center;
+    gap: 10px; /* Added gap between the menu items */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 10px;
+    display: flex; /* Changed to flex for better alignment */
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar .new-chat img {
+    width: 20px; /* Ensure the plus icon is sized properly */
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column; /* Keep recent items in a column */
+    gap: 10px; /* Add some space between each recent entry */
+}
+
+.sidebar .recent-entry {
+    display: flex; /* Ensure recent entries are in a row */
+    align-items: center; /* Align items vertically */
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry img {
+    width: 20px; /* Ensure proper sizing of icons within recent entries */
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #e6eaf1;
+}
+
+.sidebar .bottom {
+    display: flex; /* Display bottom items in a column */
+    flex-direction: column; /* Ensure vertical layout */
+    gap: 10px; /* Spacing between items */
+}
+
+.sidebar .bottom-item {
+    display: flex; /* Keep bottom items in a row */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add gap between icon and text */
+    padding: 10px; /* Padding for better spacing */
+    cursor: pointer;
+}
+
+.sidebar .bottom-item img {
+    width: 20px; /* Ensure icon size consistency in bottom items */
+}
+
+.sidebar .bottom-item:hover {
+    background-color: #e6eaf1; /* Add hover effect */
+}
